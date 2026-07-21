@@ -4,7 +4,6 @@ import { TrustBar } from '@/components/trust-bar'
 import { ProblemSection } from '@/components/problem-section'
 import { HowItWorks } from '@/components/how-it-works'
 import { ResultsSection } from '@/components/results-section'
-import { PricingSection } from '@/components/pricing-section'
 import { FaqSection } from '@/components/faq-section'
 import { FinalCta } from '@/components/final-cta'
 import { SiteFooter } from '@/components/site-footer'
@@ -18,9 +17,8 @@ export default function Page() {
       <Hero />
       <TrustBar />
       <ProblemSection />
-      <HowItWorks />
       <ResultsSection />
-      <PricingSection />
+      <HowItWorks />
       <FaqSection />
       <FinalCta />
       <SiteFooter />

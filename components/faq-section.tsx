@@ -5,20 +5,20 @@ import { Plus } from 'lucide-react'
 
 const faqs = [
   {
-    q: 'How fast can this be set up?',
-    a: 'Most systems are live within 5 to 7 business days. We handle the setup, connect it to your existing tools, and test everything before it goes live — you barely lift a finger.',
+    q: 'Will the AI voice sound like a cheap robot to my customers?',
+    a: 'No. Our voice agent uses natural, conversational speech that mirrors a trained receptionist — it greets callers warmly, asks the right HVAC triage questions, and handles interruptions. Most homeowners can\u2019t tell they\u2019re talking to AI.',
   },
   {
-    q: 'Do I need new phone numbers?',
-    a: 'No. Cavalier works with your existing business number using call forwarding and text-enabled routing, so customers keep reaching you the same way they always have.',
+    q: 'How does the AI know when my techs are available?',
+    a: 'It syncs directly with your calendar and CRM. The AI only offers appointment slots that are actually open, respects your dispatch rules, and books jobs straight into your existing schedule in real time.',
   },
   {
-    q: 'What if I already use dispatch software?',
-    a: 'That is exactly the point. We integrate with the tools you already run — ServiceTitan, Housecall Pro, Jobber, and more — so bookings flow straight into your current calendar and workflow.',
+    q: 'What happens if a caller has a complex emergency?',
+    a: 'The AI runs emergency triage to separate routine maintenance from urgent system failures. For high-priority or complex situations, it can flag the job, escalate, and route the caller to a human on your team immediately.',
   },
   {
-    q: 'Is this locked into a long-term contract?',
-    a: 'No long-term lock-in. We earn your business month to month. If Cavalier is not booking you more jobs, you are free to leave.',
+    q: 'Does this require changing my business phone number?',
+    a: 'No. Cavalier works with your existing business number using call forwarding and text-enabled routing, so customers keep reaching you exactly the way they always have.',
   },
 ]
 
@@ -26,7 +26,7 @@ export function FaqSection() {
   const [open, setOpen] = useState<number | null>(0)
 
   return (
-    <section className="mx-auto max-w-3xl px-5 py-20 md:px-8 md:py-28">
+    <section id="faq" className="mx-auto max-w-3xl scroll-mt-16 px-5 py-20 md:px-8 md:py-28">
       <p className="text-center text-xs uppercase tracking-[0.25em] text-secondary">FAQ</p>
       <h2 className="mt-4 text-center font-display text-3xl font-semibold leading-tight tracking-tight text-balance text-foreground sm:text-4xl">
         Questions, answered

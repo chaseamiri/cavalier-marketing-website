@@ -4,10 +4,10 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const links = [
+  { label: 'The Problem', href: '#problem' },
   { label: 'How It Works', href: '#how-it-works' },
-  { label: 'Results', href: '#results' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'ROI Calculator', href: '#metrics' },
+  { label: 'FAQ', href: '#faq' },
 ]
 
 export function Navbar() {
@@ -46,7 +46,7 @@ export function Navbar() {
           href="#contact"
           className="hidden rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-[0_0_0_rgba(75,94,170,0)] transition-shadow duration-300 hover:shadow-[0_0_24px_rgba(75,94,170,0.6)] md:inline-block"
         >
-          Book a Call
+          Claim Your Missed Call Audit
         </a>
 
         <button
@@ -78,7 +78,7 @@ export function Navbar() {
               onClick={() => setOpen(false)}
               className="mt-2 rounded-lg bg-primary px-4 py-3 text-center text-base font-medium text-primary-foreground"
             >
-              Book a Call
+              Claim Your Missed Call Audit
             </a>
           </div>
         </div>
