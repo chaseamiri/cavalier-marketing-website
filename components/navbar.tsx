@@ -24,8 +24,7 @@ export function Navbar() {
       }}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
-        <a href="#top" className="flex items-center gap-2" aria-label="Cavalier home">
-          <span className="h-4 w-4 rotate-45 rounded-sm bg-primary shadow-[0_0_16px_rgba(75,94,170,0.7)]" />
+        <a href="#top" aria-label="Cavalier home">
           <span className="font-display text-sm font-semibold uppercase tracking-[0.35em] text-foreground">
             Cavalier
           </span>
