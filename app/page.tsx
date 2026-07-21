@@ -8,10 +8,12 @@ import { PricingSection } from '@/components/pricing-section'
 import { FaqSection } from '@/components/faq-section'
 import { FinalCta } from '@/components/final-cta'
 import { SiteFooter } from '@/components/site-footer'
+import { OceanBreathing } from '@/components/ocean-breathing'
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="relative min-h-screen">
+      <OceanBreathing />
       <Navbar />
       <Hero />
       <TrustBar />
