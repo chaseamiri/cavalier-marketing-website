@@ -13,10 +13,7 @@ export function Hero() {
     <section id="top" className="hero-glow relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24">
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 md:px-8 lg:grid-cols-2">
         <Reveal>
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-panel px-3 py-1 text-xs font-medium tracking-wide text-muted-foreground">
-            <span className="h-1.5 w-1.5 rounded-full bg-success" />
-            Built for home service businesses
-          </span>
+
           <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.08] tracking-tight text-balance text-foreground sm:text-5xl lg:text-6xl">
             Stop Losing Leads You Already Paid For
           </h1>
