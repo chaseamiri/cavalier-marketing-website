@@ -7,7 +7,7 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 md:px-8 lg:grid-cols-2">
         {/* Left: copy stack */}
         <Reveal>
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-panel px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-secondary">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-secondary backdrop-blur-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
             24/7 AI Speed-to-Lead for HVAC Contractors
           </span>
