@@ -15,7 +15,7 @@ export function FinalCta() {
           <div className="mt-9 flex justify-center">
             <a
               href="#top"
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground shadow-[0_0_28px_rgba(75,94,170,0.45)] transition-shadow duration-300 hover:shadow-[0_0_40px_rgba(75,94,170,0.7)]"
+              className="inline-flex items-center gap-2 rounded-lg border-t border-white/20 bg-indigo-600/80 px-7 py-3.5 text-sm font-medium text-primary-foreground shadow-lg shadow-indigo-500/20 backdrop-blur-md transition-shadow duration-300 hover:shadow-[0_0_40px_rgba(99,102,241,0.6)]"
             >
               Get Your Free Missed Call Audit
               <ArrowRight className="h-4 w-4" />

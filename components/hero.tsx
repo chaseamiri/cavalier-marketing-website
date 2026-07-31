@@ -7,7 +7,7 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 md:px-8 lg:grid-cols-2">
         {/* Left: copy stack */}
         <Reveal>
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-secondary backdrop-blur-sm">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-secondary shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15)] backdrop-blur-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
             24/7 AI Speed-to-Lead for HVAC Contractors
           </span>
@@ -22,7 +22,7 @@ export function Hero() {
           <div className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-[0_0_24px_rgba(75,94,170,0.35)] transition-shadow duration-300 hover:shadow-[0_0_32px_rgba(75,94,170,0.65)]"
+              className="inline-flex items-center gap-2 rounded-lg border-t border-white/20 bg-indigo-600/80 px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg shadow-indigo-500/20 backdrop-blur-md transition-shadow duration-300 hover:shadow-[0_0_32px_rgba(99,102,241,0.55)]"
             >
               Get Your Free Missed Call Audit
               <ArrowRight className="h-4 w-4" />
@@ -39,12 +39,17 @@ export function Hero() {
 
         {/* Right: split pipeline preview card */}
         <Reveal delay={120} className="relative">
-          <div aria-hidden className="absolute -inset-6 -z-10 rounded-[2rem] bg-primary/20 blur-3xl" />
-          <div id="pipeline" className="scroll-mt-24 overflow-hidden rounded-2xl border border-border bg-card/80 shadow-2xl backdrop-blur-sm">
+          {/* Ambient backlights behind the glass */}
+          <div aria-hidden className="absolute -right-10 -top-10 -z-10 h-64 w-64 rounded-full bg-indigo-600/20 blur-3xl" />
+          <div aria-hidden className="absolute -bottom-12 -left-10 -z-10 h-72 w-72 rounded-full bg-blue-500/15 blur-3xl" />
+          <div
+            id="pipeline"
+            className="scroll-mt-24 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50 shadow-2xl shadow-black/40 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15)] backdrop-blur-xl"
+          >
             {/* Top half: Missed call -> Instant SMS */}
-            <div className="border-b border-border p-5 sm:p-6">
+            <div className="border-b border-white/10 p-5 sm:p-6">
               <p className="text-xs uppercase tracking-[0.2em] text-subtle">Missed Call → Instant Text-Back</p>
-              <div className="mt-4 flex items-center gap-3 rounded-xl border border-border bg-panel px-4 py-3">
+              <div className="mt-4 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 backdrop-blur-md transition-all hover:bg-white/[0.07]">
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-destructive/15">
                   <PhoneMissed className="h-4 w-4 text-destructive" />
                 </span>
@@ -56,7 +61,7 @@ export function Hero() {
               <div className="my-2 flex justify-center" aria-hidden>
                 <ArrowDown className="h-3.5 w-3.5 text-deep" />
               </div>
-              <div className="flex items-start gap-3 rounded-xl border border-deep bg-primary/10 px-4 py-3">
+              <div className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 backdrop-blur-md transition-all hover:bg-white/[0.07]">
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/20">
                   <MessageSquareText className="h-4 w-4 text-secondary" />
                 </span>
@@ -74,15 +79,15 @@ export function Hero() {
             <div className="p-5 sm:p-6">
               <p className="text-xs uppercase tracking-[0.2em] text-subtle">24/7 Inbound AI Voice Call</p>
               <div className="mt-4 space-y-2">
-                <div className="flex items-center gap-3 rounded-xl border border-border bg-panel px-4 py-3">
+                <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 backdrop-blur-md transition-all hover:bg-white/[0.07]">
                   <PhoneCall className="h-4 w-4 shrink-0 text-secondary" />
                   <p className="text-sm text-muted-foreground">AI receptionist answers on ring one</p>
                 </div>
-                <div className="flex items-center gap-3 rounded-xl border border-border bg-panel px-4 py-3">
+                <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 backdrop-blur-md transition-all hover:bg-white/[0.07]">
                   <ShieldAlert className="h-4 w-4 shrink-0 text-secondary" />
                   <p className="text-sm text-muted-foreground">Emergency qualification: no cool air, urgent</p>
                 </div>
-                <div className="flex items-center gap-3 rounded-xl border border-deep bg-success/10 px-4 py-3">
+                <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 backdrop-blur-md transition-all hover:bg-white/[0.07]">
                   <CalendarCheck className="h-4 w-4 shrink-0 text-success" />
                   <p className="text-sm font-medium text-foreground">Dispatch booked — 2:30 PM today</p>
                 </div>
